@@ -1,0 +1,363 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 96vh;
+    width: 84%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.gs {
+    color: white;
+    background-color: red;
+    border: 1px solid black;
+    padding: 3px 20px;
+    font-size: 13px;
+}
+
+.Sign {
+    color: white;
+    background-color: red;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.Eng {
+    display: inline-flex;
+    color: white;
+    background-color: transparent;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid white;
+}
+
+.Eng option {
+    background-color: black;
+}
+
+.content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+}
+
+.content h1 {
+
+    font-size: 60px;
+}
+
+.frm {
+    display: flex;
+    background: #fff;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.frm input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+.frm button {
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 60px;
+}
+
+.bottom {
+    background-color: rgb(27, 0, 39);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b1 {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.b12 img {
+    width: 100%;
+}
+
+.b1 h1 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+.b1 p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.head {
+    font-size: 60px;
+}
+
+.faq {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.bottom1 {
+    background-color: rgb(19, 0, 27);
+    margin-top: 0.7%;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.acc li {
+    list-style: none;
+    padding: 5px;
+}
+
+.acc li label {
+    display: flex;
+    font-size: 21px;
+    background-color: rgb(28, 0, 74);
+    padding: 20px;
+    cursor: pointer;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 2px;
+}
+
+.acc .par {
+    font-size: 21px;
+    background-color: rgb(31, 2, 52);
+    text-align: left;
+    padding: 0px 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.3s;
+}
+
+.acc input[type="checkbox"]:checked+label+.par {
+    max-height: 600px;
+    padding: 20px 20px;
+}
+
+
+.acc input[type="checkbox"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    right: 50px;
+    position: absolute;
+    transition: transform 0.5s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.content1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.gs1 {
+    color: white;
+    background-color: rgb(177, 58, 58);
+    border: 1px solid rgba(166, 60, 60, 0.023);
+    padding: 3px 20px;
+    font-size: 13px;
+}
+
+
+
+.frm button {
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 60px;
+}
+
+.frm1 {
+    width: 60%;
+    display: flex;
+    border: 1px solid gray;
+    background: transparent;
+    overflow: hidden;
+    border-radius: 30px;
+
+}
+
+.frm1 input {
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.frm1 button {
+    background: red;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 60px;
+}
+
+.frm1 input[type="email"],
+textarea {
+    color: #d1d1d1;
+}
+
+@media(max-width: 769px) {
+    .header {
+        .logo {
+            width: 100px;
+        }
+
+        .Eng {
+            padding: 5px 17px;
+            font-size: 9px;
+        }
+
+        .Sign {
+            padding: 6px 20px;
+            font-size: 10px;
+        }
+
+        .content h1 {
+            font-size: 30px;
+        }
+
+        .content h3 {
+            font-size: 13px;
+        }
+
+        .content .p {
+            font-size: 10px;
+        }
+
+        .frm button {
+            font-size: 10px;
+            padding: 10px 50px;
+        }
+    }
+
+
+
+    .b11 h1 {
+        font-size: 28px;
+        line-height: 1;
+    }
+
+    .b11 p {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .head {
+        font-size: 25px;
+    }
+
+    .acc li label {
+        font-size: 13px;
+    }
+
+    .acc .par {
+        font-size: 12px;
+    }
+
+    label::after {
+        content: '+';
+        font-size: 20px;
+    }
+
+    .content1 h2 {
+        font-size: 15px;
+    }
+
+
+    .frm1 button {
+        font-size: 10px;
+        padding: 5px 20px;
+    }
+}
+
+@media(max-width:420px) {
+    .header {
+        .logo {
+            width: 60px;
+        }
+
+
+        .Eng {
+            padding: 5px 7px;
+            font-size: 8px;
+        }
+
+        .Sign {
+            padding: 7px 15px;
+            font-size: 8px;
+        }
+    }
+
+
+    .b1 {
+        flex-direction: column;
+    }
+
+    .b12 {
+        width: 100%;
+    }
+
+    .r {
+        flex-direction: column-reverse;
+    }
+
+
+}
